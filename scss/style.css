@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #293B29;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url("clock-bg.png");
+  width: 350px;
+  height: 350px;
+  background-position: center;
+}
+
+.hand {
+  position: absolute;
+}
+
+.second-hand {
+  -webkit-transform-origin: center 100%;
+          transform-origin: center 100%;
+  bottom: 50%;
+}
+
+.minute-hand {
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+  -webkit-transform-origin: center 100%;
+          transform-origin: center 100%;
+  bottom: 50%;
+  left: 50%;
+}
+
+.hour-hand {
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform-origin: center 2px;
+          transform-origin: center 2px;
+  left: 50%;
+  top: 50%;
+}
+/*# sourceMappingURL=style.css.map */
